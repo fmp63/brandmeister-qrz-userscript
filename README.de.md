@@ -1,0 +1,40 @@
+# BrandMeister → QRZ.com
+
+Ein Safari-Userscript, das Klicks auf Rufzeichen im BrandMeister-Dashboard
+direkt auf das zugehörige QRZ.com-Profil umleitet.
+
+## Hintergrund
+Im Amateurfunk erfreut sich die digitale Betriebsart DMR, insbesondere das BrandMaster-Netzwerk, einer hohen Beliebtheit. Hier steht das BrandMeister-Dashboard zur Verfügung, das es erlaubt mittels entsprechender Filter bestimmte Talkgroups (z.B. 91, 262) zu selektieren und die zuletzt aktiven OM anzuzeigen. Die entsprechenden Calls der OM werden angezeigt und der Server stellt auch einen Link zur Verfügung. Allerdings tragen die wenigsten OM eine Informationen in diesem Link ein, sodass der Link sehr oft eine leere Seite anzeigt. 
+
+Andererseits hinterlegen sehr viele OM Informationen zu ihrer Technik, Interessen und Ausstattung in QRZ.COM. Es wäre daher praktisch, wenn ein Klick im BrandMeister-Dashboard auf die Seite des OM in QRZ.COM unleiten würde. 
+
+Die ist mit der App Userscripts möglich, die den Call vom BrandMeister-Dashboard auf QRZ.COM umleitet. Das vorliegende Skript stellt mit Hife der App Userscripts eine entsprechende Lösung zur Verfügung.
+
+## Installation
+
+1. [Userscripts](https://apps.apple.com/app/userscripts/id1463298887) für Safari installieren
+2. In der App unter *Settings → Directory* ein lokales Verzeichnis wählen
+3. `brandmeister-qrz.user.js` in dieses Verzeichnis legen
+4. In Safari unter *Settings → Extensions → Userscripts* die Berechtigung für
+   `brandmeister.network` auf **Allow** setzen (nicht „Allow for One Day")
+
+## Funktionsweise
+
+Das Script erkennt Rufzeichen in drei Stufen:
+
+1. Hash-Route im Link (`#/profile/DO2BX`) — der aktuelle Weg
+2. Query-Parameter `?call=` — Altbestand
+3. Linktext gegen ein Rufzeichen-Muster — Rückfallebene
+
+## Bekannte Stolpersteine
+
+- **CSP:** brandmeister.network blockiert Injektion im Seitenkontext, daher
+  `@inject-into content` im Metadatenblock.
+- **iCloud:** Liegt das Script-Verzeichnis in iCloud Drive, kann macOS die
+  Datei auslagern, sodass die Erweiterung sie nicht mehr lesen kann.
+- **Konsolenausgaben** des Scripts erscheinen nur im Erweiterungs-Kontext;
+  unten rechts in der Safari-Konsole den Kontext umschalten.
+
+## Lizenz
+
+MIT
