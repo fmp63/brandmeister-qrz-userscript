@@ -1,14 +1,15 @@
-# BrandMeister → QRZ.com
+# BrandMeister → QRZ.COM
 
 Ein Safari-Userscript, das Klicks auf Rufzeichen im BrandMeister-Dashboard
-direkt auf das zugehörige QRZ.com-Profil umleitet.
+direkt auf das zugehörige QRZ.COM-Profil umleitet.
 
 ## Hintergrund
-Im Amateurfunk erfreut sich die digitale Betriebsart DMR, insbesondere das BrandMaster-Netzwerk, einer hohen Beliebtheit. Hier steht das BrandMeister-Dashboard zur Verfügung, das es erlaubt mittels entsprechender Filter bestimmte Talkgroups (z.B. 91, 262) zu selektieren und die zuletzt aktiven OM anzuzeigen. Die entsprechenden Calls der OM werden angezeigt und der Server stellt auch einen Link zur Verfügung. Allerdings tragen die wenigsten OM eine Informationen in diesem Link ein, sodass der Link sehr oft eine leere Seite anzeigt. 
+Im Amateurfunk erfreut sich die digitale Betriebsart DMR, insbesondere das BrandMaster-Netzwerk, einer hohen Beliebtheit. Hier steht das sehr komfortable BrandMeister-Dashboard [https://brandmeister.network](https://brandmeister.network) zur Verfügung, das es erlaubt, mittels entsprechender Filter, bestimmte Talkgroups (z.B. 91, 262) zu selektieren und die zuletzt aktiven OM anzuzeigen. Die entsprechenden Calls der OM werden angezeigt und der Server stellt auch einen Link zur Verfügung. Allerdings tragen die wenigsten OM eine Informationen in diesem Link ein, sodass der Link sehr oft eine leere Seite ohne Inhalte anzeigt. Hier ein typisches Beispiel einer solchen Seite:
+![Empty content of link](images/Image_empty.png)
 
-Andererseits hinterlegen sehr viele OM Informationen zu ihrer Technik, Interessen und Ausstattung in QRZ.COM. Es wäre daher praktisch, wenn ein Klick im BrandMeister-Dashboard auf die Seite des OM in QRZ.COM unleiten würde. 
+Andererseits hinterlegen sehr viele OM Informationen zu ihrer Technik, Interessen und Ausstattung in [QRZ.COM](https://qrz.com). Es wäre daher praktisch, wenn ein Klick im BrandMeister-Dashboard auf die Seite des OM in [QRZ.COM](https://qrz.com) umleiten würde. 
 
-Die ist mit der App Userscripts möglich, die den Call vom BrandMeister-Dashboard auf QRZ.COM umleitet. Das vorliegende Skript stellt mit Hife der App Userscripts eine entsprechende Lösung zur Verfügung.
+Die ist mit der App [Userscripts](https://apps.apple.com/app/userscripts/id1463298887) möglich, die den Link des Call vom BrandMeister-Dashboard auf [QRZ.COM](https://qrz.com) umleitet. Das vorliegende Skript stellt mit Hife der App Userscripts eine entsprechende Lösung zur Verfügung.
 
 ## Installation
 

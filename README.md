@@ -1,25 +1,29 @@
-# BrandMeister → QRZ.com
+# BrandMeister → QRZ.COM
 
 A Safari userscript that redirects clicks on callsigns in the BrandMeister
-dashboard straight to the matching QRZ.com profile.
+dashboard straight to the matching QRZ.COM profile.
 
 ## Background
 
 In amateur radio, the digital mode DMR — and the BrandMeister network in
-particular — is very popular. The BrandMeister dashboard lets you filter for
-specific talkgroups (e.g. 91, 262) and see the most recently active hams.
-Their callsigns are shown, and the server also provides a link for each one.
-However, few hams fill in any information behind that link, so it very often
-leads to a blank page.
+particular — is very popular. It offers the very convenient BrandMeister
+dashboard [https://brandmeister.network](https://brandmeister.network),
+which lets you filter for specific talkgroups (e.g. 91, 262) and see the
+most recently active hams. Their callsigns are shown, and the server also
+provides a link for each one. However, few hams fill in any information
+behind that link, so it very often leads to a blank page with no content.
+Here's a typical example of such a page:
+![Empty content of link](images/Image_empty.png)
 
 On the other hand, a lot of hams do maintain information about their
-equipment, interests, and setup on QRZ.com. It would therefore be handy if a
-click in the BrandMeister dashboard took you straight to that ham's QRZ.com
-page instead — saving the trouble of looking it up manually on QRZ.com.
+equipment, interests, and setup on [QRZ.COM](https://qrz.com). It would
+therefore be handy if a click in the BrandMeister dashboard took you
+straight to that ham's page on [QRZ.COM](https://qrz.com) instead.
 
-This is possible with the Userscripts app: it redirects the call from the
-BrandMeister dashboard to QRZ.com. This script provides exactly that
-solution, using the Userscripts app.
+This is possible with the [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
+app, which redirects the call's link from the BrandMeister dashboard to
+[QRZ.COM](https://qrz.com). This script provides exactly that solution,
+using the Userscripts app.
 
 ## Installation
 
