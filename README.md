@@ -50,6 +50,37 @@ The script identifies callsigns in three stages:
 - **Console logs** from the script only appear in the extension context;
   switch contexts in the bottom right of the Safari console.
 
+## Platform: tested on macOS/Safari, untested on Windows/Linux
+
+The workflow described here — Safari, macOS, the Userscripts app — is the
+only one the author has actually tested. There's no equivalent guide for
+Windows or Linux, because the author has no test environment for those
+platforms.
+
+In principle, the redirect should work there too, since
+`brandmeister-qrz.user.js` is plain vanilla JavaScript with no macOS- or
+Safari-specific APIs. The obvious route would be a userscript extension for
+the respective browser, e.g.:
+
+- **Windows/Linux with Chrome, Edge, or Firefox:** install
+  [Tampermonkey](https://www.tampermonkey.net/) or
+  [Violentmonkey](https://violentmonkey.github.io/) and add
+  `brandmeister-qrz.user.js` there as a new userscript.
+
+One thing that would likely need adjusting: `@inject-into content` is a
+quirk of the Safari Userscripts app (quoid), which uses it to distinguish
+between the page context and the extension context. Tampermonkey/
+Violentmonkey don't recognize this metadata field and control the execution
+environment through their own mechanisms (among others, `@grant`/sandbox
+settings). Since brandmeister.network enforces a CSP that blocks injection
+into the page context (see "Known pitfalls"), it would need to be carefully
+checked whether the script automatically runs in the right context there, or
+whether an additional setting is required.
+
+Since the author has no way to verify this personally, this section is
+speculation based on the respective extensions' documentation — feedback or
+pull requests from Windows/Linux users are welcome.
+
 ## License
 
 MIT
