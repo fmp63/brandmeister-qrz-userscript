@@ -9,7 +9,7 @@ Im Amateurfunk erfreut sich die digitale Betriebsart DMR, insbesondere das Brand
 
 Andererseits hinterlegen sehr viele OM Informationen zu ihrer Technik, Interessen und Ausstattung in [QRZ.COM](https://qrz.com). Es wäre daher praktisch, wenn ein Klick im BrandMeister-Dashboard auf die Seite des OM in [QRZ.COM](https://qrz.com) umleiten würde. 
 
-Die ist mit der App [Userscripts](https://apps.apple.com/app/userscripts/id1463298887) möglich, die den Link des Call vom BrandMeister-Dashboard auf [QRZ.COM](https://qrz.com) umleitet. Das vorliegende Skript stellt mit Hife der App Userscripts eine entsprechende Lösung zur Verfügung.
+Dies ist mit der App [Userscripts](https://apps.apple.com/app/userscripts/id1463298887) möglich, die den Link des Call vom BrandMeister-Dashboard auf [QRZ.COM](https://qrz.com) umleitet. Das vorliegende Skript stellt mit Hife der App Userscripts eine entsprechende Lösung zur Verfügung.
 
 ## Installation
 
